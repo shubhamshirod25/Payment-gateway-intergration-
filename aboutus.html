@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="shubham">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.csss">
+
+    <title>DONATE FOR THOSE PRECIOUS SMILE</title>
+</head>
+
+<body>
+    <header class="page">
+        <nav>
+            <label class="logo">THE SMILE FOUNDATION</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="w3-content w3-section" style="max-width: 500px;">
+            <img class="myslides w3-animated-top" src="img1.jpg" style="width: 100%;">
+            <img class="myslides w3-animated-bottom" src="img2.jpg" style="width: 100%;">
+            <img class="myslides w3-animated-top" src="img3.jpg" style="width: 100%;">
+            <img class="myslides w3-animated-bottom" src="img4.png" style="width: 100%;">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("myslides")
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2500);
+            }
+        </script>
+        <div class="middle">
+            <h1>DONATE FOR THOSE PRECIOUS SMILE</h1><br><br>
+            <p><b>
+                    Donating to the causes you care about not only benefits the charities themselves, it can be deeply
+                    rewarding for you too. Millions of people give to charity on a regular basis to support causes they
+                    believe in, as well as for the positive effect it has on their own lives.
+                </b>
+
+            </p><br>
+
+            <p><b> Organizations use donations for a variety of reasons, including expanding their reach. They can pay
+                    for things like social media campaigns and fundraising events, which lets them draw attention to the
+                    issues they’re focused on. Hitting large donation benchmarks can also attract the media’s attention
+                    and give the organization a bigger platform. By donating, a person plays a role in sharing valuable
+                    information.
+
+                </b></p><br>
+
+            <p><b>Your individual contribution will help the village kids to get access to education and learn latest
+                    technology.</b></p><br>
+        </div>
+        <footer>Designed & Developed by <a href="home.html">SHUBHAM SHIROD</a></footer>
+    </div>
+</body>
+
+</html>
